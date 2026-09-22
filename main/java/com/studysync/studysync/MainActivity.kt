@@ -1,5 +1,6 @@
 package com.studysync.studysync
 
+import android.util.Log
 import android.content.Context
 import android.os.Bundle
 import android.security.keystore.KeyGenParameterSpec
@@ -460,6 +461,8 @@ fun StudySyncApp(
 
                         if (task.isSuccessful) {
 
+                            Log.d("StudySync", "User registration successful")
+
                             registeredName =
                                 name.trim()
 
@@ -513,6 +516,8 @@ fun StudySyncApp(
                     .addOnCompleteListener { task ->
 
                         if (task.isSuccessful) {
+
+                            Log.d("StudySync", "User login successful")
 
                             registeredEmail =
                                 email.trim()
@@ -1044,6 +1049,7 @@ fun StudySyncMainApp(
                             due = due
                         )
                     )
+                    Log.d("StudySync", "New study task added: $title")
 
                     TaskStorage.saveTasks(
                         context = context,
@@ -1226,12 +1232,13 @@ fun StudyAdviceCard() {
                             response.isSuccessful
                         ) {
 
+                            Log.d("StudySync", "Study advice API request successful")
+
                             advice =
                                 response.body()
                                     ?.slip
                                     ?.advice
                                     ?: "No study tip available."
-
                         } else {
 
                             advice =
