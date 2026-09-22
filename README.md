@@ -93,6 +93,25 @@ The application contains the following main sections:
 
 ---
 
+## Design Considerations
+
+StudySync was designed with simplicity and ease of use in mind. The application uses Jetpack Compose and Material 3 to provide a clean and consistent user interface. The bottom navigation allows users to easily move between the Home, Tasks, Schedule, and Profile sections. The design focuses on reducing unnecessary complexity so that students can quickly access their academic information and manage their tasks.
+
+The application was also designed with security and usability in mind. Firebase Authentication is used for account management, while the Android Keystore is used as part of the password encryption implementation. Clear input fields, buttons, progress information, and task completion controls were included to make the application straightforward to use.
+
+## GitHub Utilisation
+
+GitHub was used as the main source-code repository for the StudySync project. The repository contains the Kotlin source code, Android project files, README documentation, testing files, and other resources required to build the application.
+
+GitHub was also used for version control during development. Changes to the project were committed to the repository so that development progress could be tracked. The README provides documentation of the application's purpose, features, technologies, design considerations, testing, and development process.
+
+## GitHub Actions Utilisation
+
+GitHub Actions was used as part of the project's development workflow to support automated project checks and demonstrate the use of continuous integration. Automated workflows can be used to build and test the Android project when changes are made to the repository.
+
+This provides an additional way of checking that changes to the project do not introduce build or testing problems before the application is submitted.
+
+
 ## REST API
 
 The application uses the Advice Slip REST API to retrieve study-related advice.
