@@ -50,7 +50,7 @@ The REST API integration demonstrates:
 * Retrofit
 * JSON data conversion using Gson
 * API response handling
-* Loading and error states
+* Loading and error handling
 
 ### Profile and Settings
 
@@ -118,7 +118,7 @@ The application uses:
 * Firebase user sessions
 * Logout functionality
 
-Tasks are also associated with the currently authenticated Firebase user so that task data can be stored separately for each account.
+Tasks are associated with the currently authenticated Firebase user so that task data can be stored separately for each account.
 
 ---
 
@@ -186,13 +186,13 @@ To run StudySync, the following are recommended:
 
 ## AI Tools Usage
 
-AI tools were used during the development of StudySync as a development and learning aid. AI assistance was used to help understand Android Studio and Gradle errors, troubleshoot development problems, explain Kotlin and Jetpack Compose concepts, and provide guidance when implementing application features.
+AI tools were used during the development of StudySync as a development and learning aid. AI assistance was used to understand Android Studio and Gradle errors, troubleshoot development problems, explain Kotlin and Jetpack Compose concepts, and provide guidance when implementing application features.
 
-AI assistance was also used to help with debugging issues involving Firebase Authentication, REST API integration, Android project configuration, and application testing. Suggestions were reviewed and adapted during development rather than being used without testing.
+AI assistance was also used to help debug issues involving Firebase Authentication, REST API integration, Android project configuration, ADB/device connection problems, and application testing. Suggestions were reviewed, adapted, and tested during development rather than being used without verification.
 
 AI tools were also used to assist with documentation, code comments, troubleshooting explanations, and ideas for improving the application's user interface and functionality.
 
-The final application was tested in Android Studio and on an Android environment to verify that the implemented features worked as intended. The developer remained responsible for integrating, testing, modifying, and understanding the code used in the application.
+The final application was tested during development to verify that the implemented features worked as intended. The developer remained responsible for integrating, testing, modifying, and understanding the code used in the application.
 
 ---
 
